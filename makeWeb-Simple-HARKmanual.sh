@@ -24,7 +24,15 @@ cp econtex*         HARKmanual
 
 cd HARKmanual
 
-$scriptParent/makeWeb-Simple.sh $path/HARKmanual/HARKmanual '"'"A Users Guide for HARK: Heterogeneous Agents Resources and toolKit"'"' EconARK.org
+$scriptParent/makeWeb-Simple.sh $path/HARKmanual HARKmanual '"'"A Users Guide for HARK: Heterogeneous Agents Resources and toolKit"'"' EconARK.org
+
+echo ''
+echo ''
+
+pwd
+echo python $scriptParent/html2text-master/html2text.py HARKmanual.html '> HARKmanual.md'
+
+python $scriptParent/html2text-master/html2text.py HARKmanual.html  > HARKmanual.md
 
 
 

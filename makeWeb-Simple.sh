@@ -2,28 +2,22 @@
 # For a file that has nothing in it that htlatex does not like,
 # compile using htlatex
 
-if [ $# -ne 3 ]; then
-  echo "usage:   ${0##*/} <file> title author"
-  echo "example: ${0##*/} HARKmanual "'"A Users Guide for HARK: Heterogeneous Agents Resources and toolKit''"' Econ-ARK.org
+if [ $# -ne 4 ]; then
+  echo "usage:   ${0##*/} <path> <file> title author"
+  echo "example: ${0##*/} /Volumes/Data/Code/ARK/HARK/Documentation HARKmanual "'"A Users Guide for HARK: Heterogeneous Agents Resources and toolKit''"' Econ-ARK.org
   exit 1
 fi
 
-textName=$1
-title=$2
-author=$3
+path=$1
+textName=$2
+title=$3
+author=$4
 
-if [ ! -e $textName.tex ]; then
-    echo $textName cannot be found -- aborting
+if [ ! -e $path/$textName.tex ]; then
+    echo $path/$textName cannot be found -- aborting
 fi
 
-DIR=$(dirname "${textName}")
-
-cd $DIR
-echo `pwd`
-
-if [ ! -e $textName ]; then
-    mkdir $textName
-fi
+cd $path
 
 # Needs to compile as dvi once (and with bibtex -terse  once) before invoking htlatex
      echo pdflatex -halt-on-error    -output-format dvi --shell-escape $textName '1> /dev/null' 
