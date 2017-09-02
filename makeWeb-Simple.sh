@@ -22,7 +22,7 @@ cd $path
 # Needs to compile as dvi once (and with bibtex -terse  once) before invoking htlatex
      echo pdflatex -halt-on-error    -output-format dvi --shell-escape $textName '1> /dev/null' 
           pdflatex -halt-on-error    -output-format dvi --shell-escape $textName  1> /dev/null
-[[ $? -eq 1 ]] && pdflatex -output-format dvi --shell-escape $textName  # If it failed, run visibly without capturing output
+[[ $? -eq 1 ]] && pdflatex -output-format dvi --shell-escape -halt-on-error -file-line-error $textName  # If it failed, run visibly without capturing output
 
 bibtex -terse  $textName
 
