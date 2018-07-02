@@ -4,12 +4,12 @@ scriptParent="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 if [ $# -ne 1 ]; then
   echo "usage:   ${0##*/} path-to-directory-containing-original-HARKmanual"
-  echo "example: ${0##*/} HARKmanual "'"A Users Guide for HARK: Heterogeneous Agents Resources and toolKit''"'
+  echo "example: ${0##*/} /V/Data/Code/ARK/HARK/Documentation"
   exit 1
 fi
 
 path=$1
-
+# path=/V/Data/Code/ARK/HARK/Documentation
 if [ ! -e $path/HARKmanual ]; then
     echo 'Documentation/HARKmanual directory does not exist.  Create and rerun.'
 fi
@@ -25,8 +25,9 @@ rm -Rf ContributingToHARK/*.*
 cp HARKmanual.tex   ContributingToHARK/ContributingToHARK.tex
 cp UserGuidePic.pdf ContributingToHARK
 cp econtex*         ContributingToHARK
-
 cd ContributingToHARK
+rpl -Rf 'scrartcl' 'scrreprt' * # Due to the \|temp{rm} bug, scartcl does not work as of 20180521 -- can't figure out why
+
 
 rpl '\setboolean{ContributingToHARKOnly}{false}' '\setboolean{ContributingToHARKOnly}{true}' *.tex
 

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-HARKmake=/Volumes/Data/Code/ARK/HARKive/HARK-make
+HARKmake=../HARK-make
 
-HARKDocRoot=/Volumes/Data/Code/ARK/HARK/Documentation
+HARKDocRoot=../HARK/Documentation
 
 echo $HARKmake/makeWeb-Simple-HARKmanual.sh $HARKDocRoot 
 $HARKmake/makeWeb-Simple-HARKmanual.sh $HARKDocRoot 
