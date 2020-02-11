@@ -11,7 +11,7 @@ fi
 path=$1
 
 # path=/Volumes/Data/Code/ARK/HARK/Documentation
-# path=$scriptParent/../HARK-make/Documentation
+# scriptParent=/Volumes/Data-Bak/Code/ARK/HARK-make; path=$scriptParent/../HARK-make/Documentation
 cd $path
 if [ ! -d HARKmanual ]; then
     mkdir HARKmanual
@@ -23,10 +23,12 @@ pushd .
 cd ../../HARK/Documentation/HARKmanual/
 cp HARKmanual.tex   $path/HARKmanual
 cp HARKmanual.tex   $path/HARKmanual
-cp UserGuidePic.pdf $path/HARKmanual
+cp UserGuidePic.*   $path/HARKmanual
 cp econtex*         $path/HARKmanual 
 
-cd $scriptDir/Documentation/HARKmanual
+cd $path/HARKmanual
+
+ebb -x *.png
 
 pdflatex HARKmanual
 bibtex   HARKmanual
