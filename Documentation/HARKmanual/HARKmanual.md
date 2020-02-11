@@ -304,9 +304,8 @@ should be compared when calculating the distance between two instances of that
 class. For example, the class ConsumerSolution has distance_criteria =
 [’cFunc’], indicating that only the consumption function attribute of the
 solution matters when comparing the distance between two instances of
-ConsumerSolution. See
-[here](https://hark.readthedocs.io/en/latest/generated/HARK.core.html) for
-online documentation.
+ConsumerSolution. See [here](https://econ-
+ark.github.io/HARK/generated/HARK.core.html) for online documentation.
 
 #### 0.2.2 HARK.utilities
 
@@ -334,8 +333,8 @@ realizations of the ![N  ](HARKmanual2x.png) component RVs. This both
 simplifies solution methods (reducing numeric integrals to simple dot
 products) and allows users to easily test whether their chosen degree of
 discretization yields a sufficient approximation to the full distribution. See
-[here](https://hark.readthedocs.io/en/latest/generated/HARK.utilities.html)
-for online documentation.
+[here](https://econ-ark.github.io/HARK/generated/HARK.utilities.html) for
+online documentation.
 
 #### 0.2.3 HARK.interpolation
 
@@ -370,8 +369,8 @@ interpolation up to 4D, 1D cubic spline interpolation, (multi)linear
 interpolation over 1D interpolations (up to 4D total), (multi)linear
 interpolation over 2D interpolations (up to 4D total), linear interpolation
 over 3D interpolations, 2D curvilinear interpolation over irregular grids, and
-a 1D “lower envelope” interpolator. See [here](https://hark.readthedocs.io/en/
-latest/generated/HARK.interpolation.html) for online documentation.
+a 1D “lower envelope” interpolator. See [here](https://econ-
+ark.github.io/HARK/generated/HARKinterpolation.html) for online documentation.
 
 #### 0.2.4 HARK.simulation
 
@@ -381,8 +380,8 @@ include normal, lognormal, Weibull (including exponential), uniform,
 Bernoulli, and discrete. As an example of their use, these tools are used in
 the consumption-saving models of ConsIndShockModel.py to simulate permanent
 and transitory income shocks as well as unemployment events. See
-[here](https://hark.readthedocs.io/en/latest/generated/HARK.simulation.html)
-for online documentation.
+[here](https://econ-ark.github.io/HARK/generated/HARKsimulation.html) for
+online documentation.
 
 #### 0.2.5 HARK.estimation
 
@@ -394,8 +393,8 @@ data (i.e. for a bootstrap); the minimizers are merely convenience wrappers
 (with result reporting) for optimizers included in scipy.optimize. Future
 functionality will include more robust global search methods, including
 genetic algorithms, simulated annealing, and differential evolution. See
-[here](https://hark.readthedocs.io/en/latest/generated/HARK.estimation.html)
-for full documentation.
+[here](https://econ-ark.github.io/HARK/generated/HARKestimation.html) for full
+documentation.
 
 #### 0.2.6 HARK.parallel
 
@@ -413,9 +412,8 @@ a function called multiThreadCommandsFake that does just that, with identical
 syntax to multiThreadCommands; multithreading in HARK can thus be easily
 turned on and off.[9](HARKmanual9.html#fn9x0) The module also has functions
 for a parallel implementation of the Nelder-Mead simplex algorithm, as
-described in Wiswall and Lee (2011). See
-[here](https://hark.readthedocs.io/en/latest/generated/HARK.parallel.html) for
-full documentation.
+described in Wiswall and Lee (2011). See [here](https://econ-
+ark.github.io/HARK/generated/HARK.parallel.html) for full documentation.
 
 ### 0.3 Microeconomics: the AgentType Class
 
