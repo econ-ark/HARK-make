@@ -11,18 +11,22 @@ fi
 path=$1
 
 # path=/Volumes/Data/Code/ARK/HARK/Documentation
+# path=$scriptParent/../HARK-make/Documentation
 cd $path
 if [ ! -d HARKmanual ]; then
     mkdir HARKmanual
 fi
 
-rm HARKmanual/*.*
+#rm HARKmanual/*.*
 
-cp HARKmanual.tex   HARKmanual
-cp UserGuidePic.pdf HARKmanual
-cp econtex*         HARKmanual 
+pushd . 
+cd ../../HARK/Documentation/HARKmanual/
+cp HARKmanual.tex   $path/HARKmanual
+cp HARKmanual.tex   $path/HARKmanual
+cp UserGuidePic.pdf $path/HARKmanual
+cp econtex*         $path/HARKmanual 
 
-cd HARKmanual
+cd $scriptDir/Documentation/HARKmanual
 
 pdflatex HARKmanual
 bibtex   HARKmanual
@@ -44,8 +48,3 @@ echo python $scriptParent/html2text-master/html2text.py HARKmanual.html '> HARKm
 python $scriptParent/html2text-master/html2text.py HARKmanual.html  > HARKmanual.md
 
 ditto HARKmanual.md ../HARKmanual.md
-
-
-
-
-

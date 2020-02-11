@@ -33,8 +33,6 @@ cd $path
 
 rpl -Rf 'scrartcl' 'scrreprt' * # Due to the \|temp{rm} bug, scartcl does not work as of 20180521 -- can't figure out why
 
-rpl "HARKmanual.css" "assets/css/main.css" "HARKmanual.html"
-
 
 # Needs to compile as dvi once (and with bibtex -terse  once) before invoking htlatex
           echo pdflatex    -output-format dvi --shell-escape $textName '1> /dev/null'
@@ -73,6 +71,8 @@ echo htlatex $textName \"tex4ht.styOptions\" \"tex4htPostProcessorOptions\" \"t4
 echo htlatex $textName "$textName,html,pic-tabular,pic-m,pic-array,pic-eqnarray,info" "" "" --shell-escape # > /dev/null
      htlatex $textName "$textName,html,pic-tabular,pic-m,pic-array,pic-eqnarray,info" "" "" --shell-escape # > /dev/null
 
+# rpl "HARKmanual.css" "assets/css/main.css" "HARKmanual.html"
+     
 bibexport -o $textName.bib $textName
 sudo rm -f *-save-*
 
