@@ -1,7 +1,7 @@
 ## A User’s Guide for HARK:  
 Heterogeneous Agents Resources and toolKit
 
-February 11, 2020
+February 12, 2020
 
 Christopher D Carroll1  
 Johns Hopkins University  
