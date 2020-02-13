@@ -2,8 +2,6 @@
 
 cd ../HARKive/HARK/
 
-git checkout gh-pages
-
 HARKmake=($realpath ../HARK-make)
 
 HARKDocRoot=$(realpath ../HARK/Documentation)
