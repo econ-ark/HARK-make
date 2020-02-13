@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /Volumes/Data-Bak/Code/ARK/HARKive/HARK/
+cd ../HARKive/HARK/
 HARKmake=($realpath ../HARK-make)
 
 HARKDocRoot=$(realpath ../HARK/Documentation)
