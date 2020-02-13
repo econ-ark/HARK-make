@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cd ../HARK/
-
+cd /Volumes/Data-Bak/Code/ARK/HARKive/HARK/
 HARKmake=($realpath ../HARK-make)
 
 HARKDocRoot=$(realpath ../HARK/Documentation)
@@ -12,6 +11,3 @@ cmd="$HARKmake/makeWeb-Simple-HARKmanual.sh $HARKDocRoot"
 echo "$cmd"
 eval "$cmd"
 eval "$cmd" # Second evaluation may be necessary to build auxiliary files correctly
-
-cd "$HARKDocRoot/HARKmanual"
-rm -Rf ContributingToHARK # Autocreated directory Superceded by other documentation

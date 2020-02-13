@@ -12,7 +12,7 @@ fi
 path=$1
 
 # path=/Volumes/Data/Code/ARK/HARK/Documentation
-# scriptParent=/Volumes/Data-Bak/Code/ARK/HARK-make; path=$scriptParent/../HARK-make/Documentation
+# scriptParent=/Volumes/Data/Code/ARK/HARK-make; path=$scriptParent/../HARK/Documentation
 cd $path
 git checkout gh-pages
 
@@ -48,8 +48,9 @@ echo ''
 echo ''
 
 pwd
-echo python $scriptParent/html2text-master/html2text.py HARKmanual.html '> HARKmanual.md'
+# Pandoc for some reason does a bad job of converting to Markdown
+# html2text does somewhat better, but still bad
+cmd="python $scriptParent/html2text-master/html2text.py HARKmanual.html '> HARKmanual.md'"
+echo "$cmd"
+eval "$cmd"
 
-python $scriptParent/html2text-master/html2text.py HARKmanual.html  > HARKmanual.md
-
-ditto HARKmanual.md ../HARKmanual.md
