@@ -1,4 +1,6 @@
 #!/bin/bash
+# Make the standalone "Contributing to HARK" document; will become obsolete when docs are rationalized
+# Allows a 'single source of truth' for Contributing info
 
 scriptParent="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
