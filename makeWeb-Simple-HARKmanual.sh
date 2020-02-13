@@ -21,11 +21,9 @@ fi
 #rm HARKmanual/*.*
 
 pushd . 
-cd ../../HARK/Documentation/HARKmanual/
-cp HARKmanual.tex   $path/HARKmanual
+cd ../../HARK-make/Documentation
 cp HARKmanual.tex   $path/HARKmanual
 cp UserGuidePic.*   $path/HARKmanual
-cp econtex*         $path/HARKmanual 
 
 cd $path/HARKmanual
 
@@ -48,7 +46,7 @@ echo ''
 pwd
 # Pandoc for some reason does a bad job of converting to Markdown
 # html2text does somewhat better, but still bad
-cmd="python $scriptParent/html2text-master/html2text.py HARKmanual.html '> HARKmanual.md'"
+cmd="python $scriptParent/html2text-master/html2text.py HARKmanual.html > HARKmanual.md"
 echo "$cmd"
 eval "$cmd"
 
