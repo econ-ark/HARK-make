@@ -14,12 +14,13 @@ path=$1
 # path=/Volumes/Data/Code/ARK/HARK/Documentation
 # scriptParent=/Volumes/Data/Code/ARK/HARK-make; path=$scriptParent/../HARK/Documentation
 cd $path
+git checkout gh-pages
+
 if [ ! -d HARKmanual ]; then
     mkdir HARKmanual
 fi
 
 #rm HARKmanual/*.*
-
 pushd . 
 cd ../../HARK-make/Documentation
 cp HARKmanual.tex   $path/HARKmanual
