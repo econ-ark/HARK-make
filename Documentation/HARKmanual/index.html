@@ -19,7 +19,7 @@ toolKit</title>
 <h2 class="titleHead">A User&#8217;s Guide for HARK:<br />
 Heterogeneous Agents Resources and
 toolKit</h2>
-<div class="date" > February 12, 2020</div>
+<div class="date" > June 22, 2022</div>
 <span 
 class="ecrm-0600">&#x00A0;</span>
                   <div class="author" >  <span 
@@ -50,7 +50,7 @@ class="ecrm-1095">University of Delaware </span></div><br />
 <!--l. 438--><p class="noindent" >
 <!--l. 438--><p class="noindent" > <img 
 src="UserGuidePic-.png" alt="PIC"  
-width="346" height="231" ></div>
+width="72" height="48" ></div>
 <!--l. 438--><p class="indent" >
       <sup class="textsuperscript"></sup>
 <!--l. 438--><p class="noindent" ><sup class="textsuperscript"><span 
@@ -221,7 +221,7 @@ for solving, simulating, and estimating dynamic economic models with heterogeneo
                                                                          
 agents.<span class="footnote-mark"><a 
 href="HARKmanual2.html#fn2x0"><sup class="textsuperscript">2</sup></a></span><a 
- id="x1-2001f2"></a> 
+ id="x1-2001f2"></a>  
 Further, we seek to establish (with input from the community) standards for the
 description and specification of objects like discrete approximations to
 continuous distributions and interpolated function approximations, so that
@@ -277,7 +277,7 @@ href="https://github.com/econ-ark/HARK" >https://github.com/econ-ark/HARK</a>, t
       &#8220;Clone or download&#8221; toward the upper right of the main panel, and
       select &#8220;Download ZIP&#8221;.<span class="footnote-mark"><a 
 href="HARKmanual3.html#fn3x0"><sup class="textsuperscript">3</sup></a></span><a 
- id="x1-3009f3"></a> 
+ id="x1-3009f3"></a>  
       </li>
       <li 
   class="enumerate" id="x1-3011x5"><span 
@@ -423,7 +423,7 @@ permanent and transitory income each period with a particular standard
 deviation; it then solves this consumer&#8217;s problem and graphically displays the
 results.<span class="footnote-mark"><a 
 href="HARKmanual4.html#fn4x0"><sup class="textsuperscript">4</sup></a></span><a 
- id="x1-4001f4"></a> 
+ id="x1-4001f4"></a>  
 Model modules generally have <span 
 class="ectt-1200">Model </span>in their name.
 <!--l. 438--><p class="indent" >  <span 
@@ -511,7 +511,7 @@ href="http://www.econ2.jhu.edu/people/ccarroll/BufferStockTheory.pdf" >deep dive
 <!--l. 438--><p class="noindent" >HARK&#8217;s root directory contains six tool
 modules,<span class="footnote-mark"><a 
 href="HARKmanual5.html#fn5x0"><sup class="textsuperscript">5</sup></a></span><a 
- id="x1-6001f5"></a> 
+ id="x1-6001f5"></a>  
 each containing a variety of functions and classes that can be used in many
 economic models&#8211; or even for mathematical purposes that have nothing to do with
 economics. Some of the tool modules are very sparely populated at this time, while
@@ -522,7 +522,7 @@ in the near future, as new tools are &#8220;low hanging fruit&#8221; for contrib
                                                                          
 project.<span class="footnote-mark"><a 
 href="HARKmanual6.html#fn6x0"><sup class="textsuperscript">6</sup></a></span><a 
- id="x1-6002f6"></a> 
+ id="x1-6002f6"></a>  
   <h4 class="subsectionHead"><span class="titlemark">0.2.1</span>&#x00A0;&#x00A0;<a 
  id="x1-70000.2.1"></a>HARKcore</h4>
 <!--l. 438--><p class="noindent" >A key goal of the project is to create modularity and interoperability between
@@ -594,7 +594,7 @@ the object in question and the input to the method. As a convenient default,
 class="ectt-1200">HARKobject </span>provides a &#8220;universal distance metric&#8221; that should be useful in many
 contexts.<span class="footnote-mark"><a 
 href="HARKmanual7.html#fn7x0"><sup class="textsuperscript">7</sup></a></span><a 
- id="x1-7001f7"></a> 
+ id="x1-7001f7"></a>  
 When defining a new subclass of <span 
 class="ectt-1200">HARKobject</span>, the user simply defines the
 attribute <span 
@@ -607,7 +607,7 @@ class="ectt-1200">distance_criteria = [&#8217;cFunc&#8217;]</span>, indicating t
 function attribute of the solution matters when comparing the distance between
 two instances of <span 
 class="ectt-1200">ConsumerSolution</span>. See <a 
-href="https://econ-ark.github.io/HARK/generated/HARK.core.html" >here</a> for online documentation.
+href="https://hark.readthedocs.io/en/latest/generated/HARK.core.html" >here</a> for online documentation.
                                                                          
 
                                                                          
@@ -643,7 +643,7 @@ src="HARKmanual2x.png" alt="N  "  class="math" > component RVs. This both simpli
 methods (reducing numeric integrals to simple dot products) and allows
 users to easily test whether their chosen degree of discretization yields
 a sufficient approximation to the full distribution. See <a 
-href="https://econ-ark.github.io/HARK/generated/HARK.utilities.html" >here</a> for online
+href="https://hark.readthedocs.io/en/latest/generated/HARK.utilities.html" >here</a> for online
 documentation.
 <!--l. 438--><p class="noindent" >
   <h4 class="subsectionHead"><span class="titlemark">0.2.3</span>&#x00A0;&#x00A0;<a 
@@ -700,7 +700,7 @@ over 1D interpolations (up to 4D total), (multi)linear interpolation over 2D
 interpolations (up to 4D total), linear interpolation over 3D interpolations, 2D
 curvilinear interpolation over irregular grids, and a 1D &#8220;lower envelope&#8221;
 interpolator. See <a 
-href="https://econ-ark.github.io/HARK/generated/HARKinterpolation.html" >here</a> for online documentation.
+href="https://hark.readthedocs.io/en/latest/generated/HARK.interpolation.html" >here</a> for online documentation.
 <!--l. 438--><p class="noindent" >
   <h4 class="subsectionHead"><span class="titlemark">0.2.4</span>&#x00A0;&#x00A0;<a 
  id="x1-100000.2.4"></a>HARK.simulation</h4>
@@ -715,7 +715,7 @@ and discrete. As an example of their use, these tools are used in the
 consumption-saving models of <span 
 class="ectt-1200">ConsIndShockModel.py </span>to simulate permanent
 and transitory income shocks as well as unemployment events. See <a 
-href="https://econ-ark.github.io/HARK/generated/HARKsimulation.html" >here</a> for
+href="https://hark.readthedocs.io/en/latest/generated/HARK.simulation.html" >here</a> for
 online documentation.
 <!--l. 438--><p class="noindent" >
   <h4 class="subsectionHead"><span class="titlemark">0.2.5</span>&#x00A0;&#x00A0;<a 
@@ -730,7 +730,7 @@ data (i.e.&#x00A0;for a bootstrap); the minimizers are merely convenience wrappe
 class="ectt-1200">scipy.optimize</span>. Future
 functionality will include more robust global search methods, including genetic
 algorithms, simulated annealing, and differential evolution. See <a 
-href="https://econ-ark.github.io/HARK/generated/HARKestimation.html" >here</a> for full
+href="https://hark.readthedocs.io/en/latest/generated/HARK.estimation.html" >here</a> for full
 documentation.
 <!--l. 438--><p class="noindent" >
   <h4 class="subsectionHead"><span class="titlemark">0.2.6</span>&#x00A0;&#x00A0;<a 
@@ -741,7 +741,7 @@ class="ectt-1200">HARK.parallel </span>module provides basic
 tools for using multiple CPU cores simultaneously, with minimal
 effort.<span class="footnote-mark"><a 
 href="HARKmanual8.html#fn8x0"><sup class="textsuperscript">8</sup></a></span><a 
- id="x1-12001f8"></a> 
+ id="x1-12001f8"></a>  
 In particular, it provides the function <span 
 class="ectt-1200">multiThreadCommands</span>, which takes
                                                                          
@@ -765,10 +765,10 @@ class="ectt-1200">multiThreadCommandsFake </span>that does just that, with ident
 class="ectt-1200">multiThreadCommands</span>; multithreading in HARK can thus be easily turned on and
 off.<span class="footnote-mark"><a 
 href="HARKmanual9.html#fn9x0"><sup class="textsuperscript">9</sup></a></span><a 
- id="x1-12002f9"></a> 
+ id="x1-12002f9"></a>  
 The module also has functions for a parallel implementation of the Nelder-Mead
 simplex algorithm, as described in Wiswall and Lee (2011). See <a 
-href="https://econ-ark.github.io/HARK/generated/HARK.parallel.html" >here</a> for full
+href="https://hark.readthedocs.io/en/latest/generated/HARK.parallel.html" >here</a> for full
 documentation.
   <h3 class="sectionHead"><span class="titlemark">0.3</span>&#x00A0;&#x00A0;<a 
  id="x1-130000.3"></a>Microeconomics: the AgentType Class</h3>
@@ -787,7 +787,7 @@ an instance of <span
 class="ectt-1200">AgentType </span>as it defines a dynamic microeconomic
 problem;<span class="footnote-mark"><a 
 href="HARKmanual10.html#fn10x0"><sup class="textsuperscript">10</sup></a></span><a 
- id="x1-13001f10"></a> 
+ id="x1-13001f10"></a>  
                                                                          
 
                                                                          
@@ -828,7 +828,7 @@ class="ectt-1200">&#8217;solveOnePeriod&#8217; </span>is  an  element  of
       <span 
 class="ectt-1200">time_vary</span>.<span class="footnote-mark"><a 
 href="HARKmanual11.html#fn11x0"><sup class="textsuperscript">11</sup></a></span><a 
- id="x1-14001f11"></a> 
+ id="x1-14001f11"></a>  
       </li>
       <li class="itemize"><span 
 class="ectt-1200">solution_terminal</span>:  An  object  representing  the  solution  to  the
@@ -1063,7 +1063,7 @@ class="ectt-1200">RNG</span>) using the value in the attribute
 <span 
 class="ectt-1200">seed</span>.<span class="footnote-mark"><a 
 href="HARKmanual12.html#fn12x0"><sup class="textsuperscript">12</sup></a></span><a 
- id="x1-16001f12"></a> 
+ id="x1-16001f12"></a>  
 This method is useful for (<span 
 class="ecti-1200">inter alia</span>) ensuring that the same underlying sequence
 of shocks is used for every simulation run when a model is solved or
@@ -1112,7 +1112,7 @@ class="ectt-1200">AgentType </span>and provides solver functions for several
 variations of a consumption-saving model, including the perfect foresight
 problem.<span class="footnote-mark"><a 
 href="HARKmanual13.html#fn13x0"><sup class="textsuperscript">13</sup></a></span><a 
- id="x1-17001f13"></a> 
+ id="x1-17001f13"></a>  
 A HARK user could specify and solve a ten period perfect foresight model with
 the following commands:
 <!--l. 438--><p class="noindent" ><span 
@@ -1131,7 +1131,7 @@ class="ectt-1200">MyConsumer.solve()</span>
 class="ectt-1200">ConsumerType</span>, specifying that time is currently
 &#8220;flowing&#8221; forward<span class="footnote-mark"><a 
 href="HARKmanual14.html#fn14x0"><sup class="textsuperscript">14</sup></a></span><a 
- id="x1-17002f14"></a> 
+ id="x1-17002f14"></a>  
 and that the sequence of periods happens exactly once; the next three lines (all part
 of the same command) set the time invariant (<span 
 class="ectt-1200">CRRA</span>, <span 
@@ -1151,7 +1151,7 @@ class="ectt-1200">solution</span>, which will be a list with eleven
 class="ectt-1200">ConsumerSolution </span>objects, representing the period-by-period solution to the
 model.<span class="footnote-mark"><a 
 href="HARKmanual15.html#fn15x0"><sup class="textsuperscript">15</sup></a></span><a 
- id="x1-17003f15"></a> 
+ id="x1-17003f15"></a>  
 Each <span 
 class="ectt-1200">ConsumerSolution </span>has several attributes:
       <ul class="itemize1">
@@ -1334,7 +1334,7 @@ rules is sufficiently small.
 class="ectt-1200">Market</span>, the user should give it the following
 attributes:<span class="footnote-mark"><a 
 href="HARKmanual16.html#fn16x0"><sup class="textsuperscript">16</sup></a></span><a 
- id="x1-20001f16"></a> 
+ id="x1-20001f16"></a>  
       <ul class="itemize1">
       <li class="itemize"><span 
 class="ectt-1200">agents</span>: A list of <span 
@@ -1455,9 +1455,9 @@ in the emerging economic subfield of aesthemetrics, the
 <span 
 class="ectt-1200">FashionVictimModel</span>.<span class="footnote-mark"><a 
 href="HARKmanual17.html#fn17x0"><sup class="textsuperscript">17</sup></a></span><a 
- id="x1-21001f17"></a> <span class="footnote-mark"><a 
+ id="x1-21001f17"></a>  <span class="footnote-mark"><a 
 href="HARKmanual18.html#fn18x0"><sup class="textsuperscript">18</sup></a></span><a 
- id="x1-21002f18"></a> 
+ id="x1-21002f18"></a>  
                                                                          
 
                                                                          
@@ -1501,7 +1501,7 @@ f (p) &#x003E; 0  "  class="math" >) or hipsters who like to style themselves in
 src="HARKmanual24x.png" alt=" &#x2032;
 f (p) &#x003C; 0  "  class="math" >).<span class="footnote-mark"><a 
 href="HARKmanual19.html#fn19x0"><sup class="textsuperscript">19</sup></a></span><a 
- id="x1-21003f19"></a> 
+ id="x1-21003f19"></a>  
 A fashion victim&#8217;s problem can be written in Bellman form as:
                                                                          
 
@@ -1553,7 +1553,7 @@ src="HARKmanual38x.png" alt="pt  "  class="math" > as exogenous, they are in fac
 endogenously determined by the actions of all the fashion victims in the
 market.<span class="footnote-mark"><a 
 href="HARKmanual20.html#fn20x0"><sup class="textsuperscript">20</sup></a></span><a 
- id="x1-21004f20"></a> 
+ id="x1-21004f20"></a>  
 A dynamic general equilibrium of the &#8220;macroeconomic fashion model&#8221; is thus
 characterized by a triple of <img 
 src="HARKmanual39x.png" alt="(a,b,w )  "  class="math" > such that when fashion victims believe in
@@ -1637,7 +1637,7 @@ src="HARKmanual56x.png" alt="pt-1   "  class="math" >, approximating <img
 src="HARKmanual57x.png" alt="w  "  class="math" > as twice the standard deviation of prediction
 errors.<span class="footnote-mark"><a 
 href="HARKmanual21.html#fn21x0"><sup class="textsuperscript">21</sup></a></span><a 
- id="x1-21005f21"></a> 
+ id="x1-21005f21"></a>  
 The new fashion rule is an instance of the simple FashionEvoFunc class, whose
 only methods are inherited from <span 
 class="ectt-1200">HARKobject</span>.
@@ -1679,7 +1679,7 @@ class="ecti-1200">it&#8217;s</span>
 class="ecti-1200">very useful</span>) but don&#8217;t, this is a good sign that HARK has a hole that you can
 fill.<span class="footnote-mark"><a 
 href="HARKmanual22.html#fn22x0"><sup class="textsuperscript">22</sup></a></span><a 
- id="x1-23001f22"></a> 
+ id="x1-23001f22"></a>  
 <!--l. 449--><p class="indent" >  Secondly, the development team wants to expand HARK to include more
 canonical models. Most of the models available in the toolKit at the time of its
 public beta release concern agents with (geometrically discounted) CRRA utility
@@ -1694,7 +1694,7 @@ possible. For ideas of potential model extensions for HARK, see section
 <a 
 href="#x1-300000.6.2">0.6.2<!--tex4ht:ref: sec:FutureModels --></a>.<span class="footnote-mark"><a 
 href="HARKmanual23.html#fn23x0"><sup class="textsuperscript">23</sup></a></span><a 
- id="x1-23002f23"></a> 
+ id="x1-23002f23"></a>  
 <!--l. 451--><p class="indent" >  Finally, contributions to HARK are not restricted to entirely new
 functionality. While we have done our best to provide flexible frameworks and
 useful tools, we have almost certainly overlooked an unexpected case that would
@@ -1737,7 +1737,7 @@ href="https://www.github.com" >github.com</a>; the homepage should
       prompt you to choose a username and password. Signing up is quick,
       easy, and free.<span class="footnote-mark"><a 
 href="HARKmanual24.html#fn24x0"><sup class="textsuperscript">24</sup></a></span><a 
- id="x1-24003f24"></a> 
+ id="x1-24003f24"></a>  
       </li>
       <li 
   class="enumerate" id="x1-24005x2"><span 
@@ -1806,7 +1806,7 @@ After step 2, a record of your changes has been stored locally by
 the git system, but is not yet reflected in the public remote copy on
 GitHub.<span class="footnote-mark"><a 
 href="HARKmanual25.html#fn25x0"><sup class="textsuperscript">25</sup></a></span><a 
- id="x1-24016f25"></a> 
+ id="x1-24016f25"></a>  
 The &#8220;timeline&#8221; summary of the repository at the top of the Desktop window
 shows the history of commits for the repository: each dot represents a commit
 that was pushed to the remote server, and each open ring represents a
@@ -1814,7 +1814,7 @@ local commit that has not been pushed to the remote server; the large
 broken ring on the far right represents changes that have not been locally
 committed.<span class="footnote-mark"><a 
 href="HARKmanual26.html#fn26x0"><sup class="textsuperscript">26</sup></a></span><a 
- id="x1-24017f26"></a> 
+ id="x1-24017f26"></a>  
 The History tab lists all previous commits, including the timestamp, contributor,
 and a record of changes made.
 <!--l. 481--><p class="indent" >  Suppose you have mucked about in your fork for a while and have
@@ -1837,7 +1837,7 @@ class="ecti-1200">desired changes in a new branch of your fork</span>. Make a ne
       that  branch  to  the  commit  just  before  you  forked  from  the  main
       repository,<span class="footnote-mark"><a 
 href="HARKmanual27.html#fn27x0"><sup class="textsuperscript">27</sup></a></span><a 
- id="x1-24020f27"></a> 
+ id="x1-24020f27"></a>  
       then edit this branch to include <span 
 class="ecti-1200">only the changes you want to push to</span>
       <span 
@@ -1879,7 +1879,7 @@ you want to do something that no one has mentioned yet as an Issue,
 make a new Issue on GitHub (briefly) describing what you intend to
 do.<span class="footnote-mark"><a 
 href="HARKmanual28.html#fn28x0"><sup class="textsuperscript">28</sup></a></span><a 
- id="x1-25001f28"></a> 
+ id="x1-25001f28"></a>  
 This will both help prevent two people from working on the same thing (and one
 of them potentially wasting time on it), and lets the development team know
 what&#8217;s coming. Moreover, if you propose a contribution that is (a) already in
@@ -1926,7 +1926,7 @@ class="ecbx-1200">Is  the  code  demonstrated  with  an  example?  </span>If  yo
       new function, consider providing a snippet of code demonstrating its
       use.<span class="footnote-mark"><a 
 href="HARKmanual29.html#fn29x0"><sup class="textsuperscript">29</sup></a></span><a 
- id="x1-25010f29"></a> 
+ id="x1-25010f29"></a>  
       </li>
       <li 
   class="enumerate" id="x1-25012x5"><span 
@@ -1969,7 +1969,7 @@ before issuing a pull request. We are in the process of recruiting &#8220;czars&
 to oversee particular aspects of HARK, providing their knowledge and
 expertise.<span class="footnote-mark"><a 
 href="HARKmanual30.html#fn30x0"><sup class="textsuperscript">30</sup></a></span><a 
- id="x1-25019f30"></a> 
+ id="x1-25019f30"></a>  
 While czars might directly evaluate submissions as a HARK team member,
 their more important role is to help establish these guidelines for their
 domain, more specifically nailing down what we mean by &#8220;correct&#8221; or &#8220;well
@@ -1991,7 +1991,7 @@ class="ecti-1200">must  be  a</span>
       <span 
 class="ecti-1200">verb</span>.<span class="footnote-mark"><a 
 href="HARKmanual31.html#fn31x0"><sup class="textsuperscript">31</sup></a></span><a 
- id="x1-26001f31"></a> 
+ id="x1-26001f31"></a>  
       </li>
       <li class="itemize">Variable and class names <span 
 class="ecti-1200">should not </span>have a verb as their first word.
@@ -2016,7 +2016,7 @@ adjust them. Economic variables in model modules should (usually)
 not use underscores, instead using camel case to the greatest extent
 possible.<span class="footnote-mark"><a 
 href="HARKmanual32.html#fn32x0"><sup class="textsuperscript">32</sup></a></span><a 
- id="x1-26002f32"></a> 
+ id="x1-26002f32"></a>  
 The development team prefers this standard so that users can translate between
 Python code and LaTeX script with minimal work.
 <!--l. 531--><p class="indent" >  Conventions for naming variables in HARK&#8217;s tool modules are significantly
@@ -2042,14 +2042,14 @@ modules.
                                                                          
 fear<span class="footnote-mark"><a 
 href="HARKmanual33.html#fn33x0"><sup class="textsuperscript">33</sup></a></span><a 
- id="x1-27001f33"></a> 
+ id="x1-27001f33"></a>  
 is that a new user will open up our code, get hopelessly confused
 trying to read it, and then never look at HARK again. To prevent
 this tragic outcome, we have tried hard to provide comprehensive,
 accurate documentation and comments within the code describing our
 methods.<span class="footnote-mark"><a 
 href="HARKmanual34.html#fn34x0"><sup class="textsuperscript">34</sup></a></span><a 
- id="x1-27002f34"></a> 
+ id="x1-27002f34"></a>  
 Moreover, HARK uses the Sphinx utility to generate a website with <a 
 href="https://econ-ark.github.io/HARK/" >online
 documentation</a> for all of our tool and model modules, so that users can learn
@@ -2065,7 +2065,7 @@ rules.
       sentences. A docstring at the top of a module should be formatted
       as:<span class="footnote-mark"><a 
 href="HARKmanual35.html#fn35x0"><sup class="textsuperscript">35</sup></a></span><a 
- id="x1-27003f35"></a> 
+ id="x1-27003f35"></a>  
       <!--l. 540--><p class="noindent" ><span 
 class="ectt-1200">"""</span>
       <!--l. 542--><p class="noindent" ><span 
@@ -2176,7 +2176,7 @@ class="ectt-1200">HARK.core </span>might also develop a
 framework more suited to industrial organization models and dynamic
 games.<span class="footnote-mark"><a 
 href="HARKmanual36.html#fn36x0"><sup class="textsuperscript">36</sup></a></span><a 
- id="x1-29001f36"></a> 
+ id="x1-29001f36"></a>  
 <!--l. 665--><p class="indent" >  The <span 
 class="ectt-1200">HARK.estimation </span>module in particular is very sparsely populated, with
 its functions mostly serving as wrappers for &#8220;off the shelf&#8221; optimization methods
@@ -2208,7 +2208,7 @@ representing functions in higher dimensions, suffering greatly from the curse of
                                                                          
 dimensionality.<span class="footnote-mark"><a 
 href="HARKmanual37.html#fn37x0"><sup class="textsuperscript">37</sup></a></span><a 
- id="x1-29002f37"></a> 
+ id="x1-29002f37"></a>  
 We are quite confident that <span 
 class="ectt-1200">HARK.interpolation </span>will soon include techniques
 more applicable to high dimensional state spaces, including Smolnyak
@@ -2301,7 +2301,7 @@ hole, offering a modest prize of, say, $20,000 to the programmer who
 submits the best implementation of the model, as judged by clearly stated
 criteria.<span class="footnote-mark"><a 
 href="HARKmanual38.html#fn38x0"><sup class="textsuperscript">38</sup></a></span><a 
- id="x1-31001f38"></a> 
+ id="x1-31001f38"></a>  
                                                                          
 
                                                                          
@@ -2360,7 +2360,7 @@ development team believes these subfields to have considerable overlap in terms
 of methods and techniques, and that HARK might not be noticed by half of its
 potential audience due to its name. In a general sense, the Econ-Ark gives us
 cover to expand the scope of our efforts and/or rebrand the toolKit for an
-alternative audience.   
+alternative audience.    
 </body></html> 
 
                                                                          

@@ -77,4 +77,4 @@ bibexport -o $textName.bib $textName
 sudo rm -f *-save-*
 
 cp  $textName.html index.html
-open index.html
+# open index.html

@@ -23,11 +23,11 @@ fi
 #rm HARKmanual/*.*
 
 pushd . 
-cd ../../HARK/Documentation/HARKmanual/
-cp HARKmanual.tex   $path/HARKmanual
-cp HARKmanual.tex   $path/HARKmanual
-cp UserGuidePic.*   $path/HARKmanual
-cp econtex*         $path/HARKmanual 
+# cd ../../HARK/Documentation/HARKmanual/
+# cp HARKmanual.tex   $path/HARKmanual
+# cp HARKmanual.tex   $path/HARKmanual
+# cp UserGuidePic.*   $path/HARKmanual
+# cp econtex*         $path/HARKmanual 
 
 cd $path/HARKmanual
 
@@ -38,11 +38,11 @@ bibtex   HARKmanual
 pdflatex HARKmanual
 pdflatex HARKmanual
 
-ditto HARKmanual.pdf ../HARKmanual.pdf
-rpl -Rf 'scrartcl' 'scrreprt' * # Due to the \|temp{rm} bug, scartcl does not work for html as of 20180521 -- can't figure out why
+cp HARKmanual.pdf ../HARKmanual.pdf
+# rpl -Rf 'scrartcl' 'scrreprt' * # Due to the \|temp{rm} bug, scartcl does not work for html as of 20180521 -- can't figure out why
 
 
-$scriptParent/makeWeb-Simple.sh $path/HARKmanual HARKmanual '"'"A Users Guide for HARK: Heterogeneous Agents Resources and toolKit"'"' EconARK.org
+# $scriptParent/makeWeb-Simple.sh $path/HARKmanual HARKmanual '"'"A Users Guide for HARK: Heterogeneous Agents Resources and toolKit"'"' EconARK.org
 
 echo ''
 echo ''
@@ -52,5 +52,5 @@ pwd
 # html2text does somewhat better, but still bad
 cmd="python $scriptParent/html2text-master/html2text.py HARKmanual.html '> HARKmanual.md'"
 echo "$cmd"
-eval "$cmd"
+# eval "$cmd"
 
